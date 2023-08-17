@@ -17,6 +17,7 @@ import java.util.ArrayList;
 public class AdaptadorRestaurante  extends RecyclerView.Adapter <AdaptadorRestaurante.viewHolder> {
 
     public ArrayList<MoldeRestaurante> listaRestaurante;
+     public int edad; 
 
     public AdaptadorRestaurante() {
     }
