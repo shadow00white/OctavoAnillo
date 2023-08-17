@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="opcion1">
+        inglese
+    </string>
+
+    <string name="opcion2">
+        spagnolo
+    </string>
+
+    <string name="opcion3">
+        italiano
+    </string>
+
+    <string name="opcion4">
+        chi siamo
+    </string>
+
+    <string name="usuario">
+        UTENTE
+    </string>
+
+    <string name="contraseña">
+        PASSWORD
+    </string>
+
+    <string name="ingresar">
+        ACCEDERE
+    </string>
+
+    <string name="resenahoteles">
+    Gli hotel a Rio Claro sono un paradiso naturale, offrendo unesperienza unica in mezzo alla giungla e ai fiumi cristallini, ricchi di sfumature, suoni, colori, texture e forme. Ideali per chi cerca una vacanza tranquilla e arricchente a contatto con la natura
+    </string>
+
+    <string name="resenarestaurantes">
+        "El Fogon del Rio" ti invita a gustare la vera cucina della regione. Questo accogliente ristorante rustico ti da il benvenuto con unatmosfera calda e familiare. I suoi piatti casalinghi e gustosi si distinguono per lautenticita e il sapore.
+    </string>
+
+    <string name="resenasitios">
+        Limponente Parco Naturale Rio Claro e la principale attrazione, dove i visitatori possono esplorare grotte, nuotare in acque cristalline e percorrere sentieri che serpeggiano attraverso la giungla.
+    </string>
+
+    <string name="resena">
+        Lo sviluppo software e un appassionante hobby tecnologico che risveglia la mia creativita e migliora le mie capacita di risoluzione dei problemi. Codificare e progettare programmi mi immerge in un mondo di possibilita.
+    </string>
+
+    <string name="hoteles">
+        HOTEL
+    </string>
+
+    <string name="restaurantes">
+        RISTORANTI
+    </string>
+
+    <string name="sitios">
+        LUOGHI TURISTICI
+    </string>
+
+    <string name="vermas">
+        vedi di piu
+    </string>
+
+
+</resources>

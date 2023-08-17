@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantesHome"
+    android:background="@drawable/restaurantes"
+    >
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="124dp"
+        android:layout_height="110dp"
+        android:src="@drawable/hirviendo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="245dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/restaurantes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/icono"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <TextView
+        android:id="@+id/resenarestaurante"
+        android:layout_width="402dp"
+        android:layout_height="192dp"
+        android:text="@string/resenarestaurantes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="329dp"
+        android:layout_height="170dp"
+        android:src="@drawable/restaurante"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resenarestaurante"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <Button
+        android:id="@+id/botonrestaurantes"
+        android:layout_width="305dp"
+        android:layout_height="85dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/lightseagreen"
+        android:text="@string/vermas"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen"
+        app:layout_constraintVertical_bias="0.026" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

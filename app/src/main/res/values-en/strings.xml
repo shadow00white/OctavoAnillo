@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="opcion1">
+        English
+    </string>
+
+    <string name="opcion2">
+        Spanish
+    </string>
+
+    <string name="opcion3">
+        Italian
+    </string>
+
+    <string name="opcion4">
+        About us
+    </string>
+
+    <string name="usuario">
+         USER
+    </string>
+
+    <string name="contraseña">
+        PASSWORD
+    </string>
+
+    <string name="ingresar">
+        LOG IN
+    </string>
+
+    <string name="resenahoteles">
+        Hotels in Rio Claro are a natural paradise, offering a unique experience amidst the jungle and crystal-clear rivers, full of nuances, sounds, colors, textures, and shapes. Ideal for those seeking a tranquil and enriching getaway with nature
+    </string>
+
+    <string name="resenarestaurantes">
+         "El Fogon del Rio" invites you to savor the authentic cuisine of the region. This cozy rustic restaurant welcomes you with a warm and family-friendly atmosphere. Its homemade and tasty dishes stand out for their authenticity and flavor.
+    </string>
+
+    <string name="resenasitios">
+        The imposing Río Claro Natural Park is the main attraction, where visitors can explore caves, swim in crystal-clear waters, and hike along trails that wind through the jungle.
+    </string>
+
+    <string name="resena">
+ Software development is an exciting technological hobby that awakens creativity in me and improves my problem-solving skills. Coding and designing programs immerse me in a world of possibilities.    </string>
+
+    <string name="hoteles">
+        HOTELS
+    </string>
+
+    <string name="restaurantes">
+        RESTAURANTS
+    </string>
+
+    <string name="sitios">
+        TOURIST SITES
+    </string>
+
+    <string name="vermas">
+        See more
+    </string>
+
+</resources>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">SeptimoAnillo</string>
+
+    <string name="opcion1">
+        Ingles
+    </string>
+
+    <string name="opcion2">
+        Español
+    </string>
+
+    <string name="opcion3">
+        Italiano
+    </string>
+
+    <string name="opcion4">
+        Acerca de nosotros
+    </string>
+
+    <string name="usuario">
+        USUARIO
+    </string>
+
+    <string name="contraseña">
+        CONTRASEÑA
+    </string>
+
+    <string name="ingresar">
+        INGRESAR
+    </string>
+
+    <string name="resenahoteles">
+    Los hoteles en Rio Claro son un paraiso natural, ofreciendo una experiencia unica en medio de la selva y los cristalinos rios , lleno de matices, sonidos, colores, texturas y formas. Ideales para quienes buscan una escapada tranquila y enriquecedora con la naturaleza.
+    </string>
+
+    <string name="resenarestaurantes">
+        "El Fogon del Rio" te invita a saborear la autentica cocina de la region. Este acogedor restaurante rustico te da la bienvenida con un ambiente calido y familiar. Sus platos caseros y sabrosos destacan por su autenticidad y sabor
+    </string>
+
+    <string name="resenasitios">
+        El imponente Parque Natural Río Claro es el principal atractivo, donde los visitantes pueden explorar cuevas, nadar en aguas cristalinas y recorrer senderos que serpentean por la selva.
+    </string>
+
+    <string name="resena">
+        El desarrollo de software, es un apasionante hobby tecnologico que despierta en mi  la creatividad y mejora mis  habilidades de resolucion de problemas. Codificar y diseñar programas me sumerge en un mundo de posibilidades.
+    </string>
+
+    <string name="hoteles">
+        HOTELES
+    </string>
+
+    <string name="restaurantes">
+        RESTAURANTES
+    </string>
+
+    <string name="sitios">
+        SITIOS TURISTICOS
+    </string>
+
+
+    <string name="vermas">
+        Ver mas
+    </string>
+
+
+</resources>
