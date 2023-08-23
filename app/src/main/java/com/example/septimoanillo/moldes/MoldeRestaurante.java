@@ -6,12 +6,13 @@ public class MoldeRestaurante {
     private String nombrecontacto;
     private String telefono;
     private String precio;
-    private  Integer foto;
+    private Integer foto;
     private String platorecomendado;
 
-    public MoldeRestaurante(String nombreRestaurante) {
-        this.nombreRestaurante = nombreRestaurante;
+
+    public MoldeRestaurante() {
     }
+
 
     public MoldeRestaurante(String nombreRestaurante, String nombrecontacto, String telefono, String precio, Integer foto, String platorecomendado) {
         this.nombreRestaurante = nombreRestaurante;
@@ -22,13 +23,7 @@ public class MoldeRestaurante {
         this.platorecomendado = platorecomendado;
     }
 
-    public String getNombreRestaurante() {
-        return nombreRestaurante;
-    }
 
-    public void setNombreRestaurante(String nombreRestaurante) {
-        this.nombreRestaurante = nombreRestaurante;
-    }
 
     public String getNombrecontacto() {
         return nombrecontacto;
@@ -68,5 +63,9 @@ public class MoldeRestaurante {
 
     public void setPlatorecomendado(String platorecomendado) {
         this.platorecomendado = platorecomendado;
+    }
+
+    public String getNombreRestaurante() {
+        return nombreRestaurante;
     }
 }

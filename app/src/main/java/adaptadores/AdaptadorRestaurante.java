@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class AdaptadorRestaurante  extends RecyclerView.Adapter <AdaptadorRestaurante.viewHolder> {
 
     public ArrayList<MoldeRestaurante> listaRestaurante;
-     public int edad; 
+     public int edad;
 
     public AdaptadorRestaurante() {
     }
@@ -53,10 +53,10 @@ public class AdaptadorRestaurante  extends RecyclerView.Adapter <AdaptadorRestau
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel=itemView.findViewById(R.id.fotoListaHotel);
-            nombreHotel=itemView.findViewById(R.id.nombreListaHotel);
-            precioHotel =itemView.findViewById(R.id.precioListaHotel);
-            contactoHotel =itemView.findViewById(R.id.celularhotel);
+            fotoHotel=itemView.findViewById(R.id.restaurante1);
+            nombreHotel=itemView.findViewById(R.id.nombrerestaurante);
+            precioHotel =itemView.findViewById(R.id.precio);
+            contactoHotel =itemView.findViewById(R.id.numerotelefono);
 
         }
 
