@@ -31,10 +31,10 @@ public class ListaRestaurante extends AppCompatActivity {
 
     }
     public void llenarListaConDatosR (){
-        ListaRestaurante.add(new MoldeRestaurante("Cascadas y Sabores","Josh Prieto", "3265617845","50.000$",R.drawable.restaurante1,"Bandeja Paisa"));
-        ListaRestaurante.add(new MoldeRestaurante("Mesa del Cañón","Josh Prieto", "3265617845","50.000$",R.drawable.restaurante1,"Bandeja Paisa"));
-        ListaRestaurante.add(new MoldeRestaurante("Rincón Gastronómico ","Josh Prieto", "3265617845","50.000$",R.drawable.restaurante1,"Bandeja Paisa"));
-        ListaRestaurante.add(new MoldeRestaurante("Delicias del Rio","Josh Prieto", "3265617845","50.000$",R.drawable.restaurante1,"Bandeja Paisa"));
-        ListaRestaurante.add(new MoldeRestaurante(" Carbón y Le{a","Josh Prieto", "3265617845","50.000$",R.drawable.restaurante1,"Bandeja Paisa"));
+        ListaRestaurante.add(new MoldeRestaurante("Cascada y Sabor","Josh Prieto", "3265617845","50.000$",R.drawable.restaurante1,"Bandeja Paisa"));
+        ListaRestaurante.add(new MoldeRestaurante("Mesa del Cañón","Josh Prieto", "89561235","50.000$",R.drawable.restaurante,"Carne a la llanera"));
+        ListaRestaurante.add(new MoldeRestaurante("Rincón Gastronómico ","", "389654124","50.000$",R.drawable.restaurante3,"Ramen criollo"));
+        ListaRestaurante.add(new MoldeRestaurante("Delicias del Rio","Jairo la parrilla", "3265623120","50.000$",R.drawable.restaurante4,"Variedad del sabor "));
+        ListaRestaurante.add(new MoldeRestaurante(" Carbón y Leña","Doña Paella", "89512356","50.000$",R.drawable.restaurante5," Sal al Mar"));
     }
 }

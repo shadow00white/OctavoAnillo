@@ -4,78 +4,65 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/nombreturismo"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:text="Rafting Reserva Natural  Rio claro"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        app:layout_constraintHorizontal_bias="0.6"
-        app:layout_constraintVertical_bias="0.05"
-        />
-
     <ImageView
         android:id="@+id/turismo1"
         android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        app:layout_constraintTop_toBottomOf="@id/nombreturismo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/rafting"
-        app:layout_constraintVertical_bias="0.04"
-        app:layout_constraintHorizontal_bias="0.05"
-        />
-    <TextView
-        android:id="@+id/telefonoturismo"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:text=" Contacto:  311-354-01-19"
-        app:layout_constraintTop_toBottomOf="@id/telefonoturismo"
+        android:layout_height="300dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0."
-        app:layout_constraintVertical_bias="0.6"
-        android:textSize="20dp"
+        android:src="@drawable/sitioturistico1"
+        android:scaleType="fitXY"
+        app:layout_constraintVertical_bias="0"
         />
 
     <TextView
-        android:id="@+id/reservaturismo"
-        android:layout_width="00dp"
-        android:layout_height="40dp"
-        android:text=" Reserva : info@rioclaroreservanatural.com   "
-        app:layout_constraintTop_toBottomOf="@id/reservaturismo"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/nombreturismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/turismo1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintVertical_bias="0.071"
+        android:text="Gampling"
+        android:textSize="26dp"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintVertical_bias="0.7"
-        android:textSize="20dp"
         />
 
     <TextView
         android:id="@+id/precioturismo"
-        android:layout_width="400dp"
-        android:layout_height="40dp"
-        android:text=" Precio:   300.000 - 400.000 $"
-        app:layout_constraintTop_toBottomOf="@id/precioturismo"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nombreturismo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.04"
+        android:text="100.000 COP"
         android:textStyle="bold"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.8"
-        android:textSize="20dp"
+        android:textSize="23dp"
+
         />
 
+    <TextView
+        android:id="@+id/contactoturismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nombreturismo"
+        app:layout_constraintStart_toEndOf="@id/precioturismo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.3"
+        android:textSize="23dp"
+        android:text="Contacto: 3102325680 "
+        android:textStyle="bold"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.viewHolder> {
 
-    private Object ListaSitiosTuristicos;
+
     public ArrayList<MoldeTurismo> listaTurismo;
 
     public AdaptadorTurismo() {
@@ -41,8 +41,7 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
     }
 
     public AdaptadorTurismo(ArrayList<MoldeTurismo> listaSitiosTuristicos) {
-        this.listaTurismo =listaTurismo;
-
+        this.listaTurismo = listaSitiosTuristicos;
     }
 
     public class viewHolder extends RecyclerView.ViewHolder {
@@ -54,10 +53,10 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel=itemView.findViewById(R.id.fotoListaHotel);
-            nombreHotel=itemView.findViewById(R.id.nombreListaHotel);
-            precioHotel =itemView.findViewById(R.id.precioListaHotel);
-            contactoHotel =itemView.findViewById(R.id.celularhotel);
+            fotoHotel=itemView.findViewById(R.id.turismo1);
+            nombreHotel=itemView.findViewById(R.id.nombreturismo);
+            precioHotel =itemView.findViewById(R.id.precioturismo);
+            contactoHotel =itemView.findViewById(R.id.contactoturismo);
 
         }
 
@@ -69,3 +68,5 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
         }
     }
 }
+
+
