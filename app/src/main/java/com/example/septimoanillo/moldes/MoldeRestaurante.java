@@ -1,6 +1,8 @@
 package com.example.septimoanillo.moldes;
 
-public class MoldeRestaurante {
+import java.io.Serializable;
+
+public class MoldeRestaurante implements Serializable {
 
     private String nombreRestaurante;
     private String nombrecontacto;

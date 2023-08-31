@@ -34,11 +34,11 @@ public class ListaHoteles extends AppCompatActivity {
     }
 
     public void llenarListaConDatos(){
-        ListaHoteles.add(new MoldeHotel("RapidRush","80.000$","3005629122",R.drawable.hotel1));
-        ListaHoteles.add(new MoldeHotel("Hotel    Ecotel","100.000$","3217229715",R.drawable.hotelmulata2));
-        ListaHoteles.add(new MoldeHotel("Hotel el  Parador","200.000$","3217229715",R.drawable.hotelparador3));
-        ListaHoteles.add(new MoldeHotel("Hotel Rio Claro","150.000$","3217229715",R.drawable.hotelrioclaro4));
-        ListaHoteles.add(new MoldeHotel("Hotel el Leña seca","70.000$","3217229715",R.drawable.refugio5));
+        ListaHoteles.add(new MoldeHotel("Refugio","80.000$","3005629122",R.drawable.hotel1));
+        ListaHoteles.add(new MoldeHotel("Ecotel","100.000$","3217229715",R.drawable.hotelmulata2));
+        ListaHoteles.add(new MoldeHotel("Parador","200.000$","3217229715",R.drawable.hotelparador3));
+        ListaHoteles.add(new MoldeHotel("Rio Claro","150.000$","3217229715",R.drawable.hotelrioclaro4));
+        ListaHoteles.add(new MoldeHotel("Leña seca","70.000$","3217229715",R.drawable.refugio5));
 
     }
 

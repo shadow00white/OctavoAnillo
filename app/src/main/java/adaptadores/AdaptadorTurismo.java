@@ -1,5 +1,6 @@
 package adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.septimoanillo.AmpliandoHotel;
+import com.example.septimoanillo.AmpliandoSitioTurismo;
 import com.example.septimoanillo.ListaSitiosTuristicos;
 import com.example.septimoanillo.R;
 import com.example.septimoanillo.moldes.MoldeTurismo;
@@ -65,6 +68,18 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
             nombreHotel.setText(moldeTurismo.getNombreTurismo());
             precioHotel.setText(moldeTurismo.getPrecio());
             contactoHotel.setText(moldeTurismo.getTelefono());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent= new Intent(itemView.getContext(), AmpliandoSitioTurismo.class);
+                    intent.putExtra("datosturismo",moldeTurismo);
+                    itemView.getContext().startActivity(intent);
+
+                }
+            });
+
+
         }
     }
 }

@@ -1,5 +1,6 @@
 package adaptadores;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.septimoanillo.AmpliandoRestaurante;
 import com.example.septimoanillo.R;
 import com.example.septimoanillo.moldes.MoldeRestaurante;
 
@@ -65,6 +67,18 @@ public class AdaptadorRestaurante  extends RecyclerView.Adapter <AdaptadorRestau
             nombreHotel.setText(moldeRestaurante.getNombreRestaurante());
             precioHotel.setText(moldeRestaurante.getPrecio());
             contactoHotel.setText(moldeRestaurante.getTelefono());
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(itemView.getContext(), AmpliandoRestaurante.class);
+                    intent.putExtra("datosrestaurante",moldeRestaurante);
+                    itemView.getContext().startActivity(intent);
+
+
+
+                }
+            });
         }
     }
 }
