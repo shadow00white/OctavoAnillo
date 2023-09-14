@@ -3,6 +3,7 @@ package com.example.septimoanillo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.septimoanillo.moldes.MoldeRestaurante;
@@ -11,6 +12,7 @@ import com.example.septimoanillo.moldes.MoldeTurismo;
 public class AmpliandoSitioTurismo extends AppCompatActivity {
 
     MoldeTurismo moldeTurismo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

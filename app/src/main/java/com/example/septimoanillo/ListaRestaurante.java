@@ -38,3 +38,5 @@ public class ListaRestaurante extends AppCompatActivity {
         ListaRestaurante.add(new MoldeRestaurante(" Carbón y Leña","Doña Paella", "89512356","50.000$",R.drawable.restaurante5," Sal al Mar"));
     }
 }
+
+// Falta agregar datos a la lista restaurante// terminar molde sitiosturismo. 
