@@ -8,19 +8,22 @@ public class MoldeRestaurante implements Serializable {
     private String nombrecontacto;
     private String telefono;
     private String precio;
+
+    private Integer foto;
     private String comentario;
     private Integer fotoAdicional;
     private  Integer fotoAdicional2;
     private float valoracion;
 
-    public MoldeRestaurante() {
+    public MoldeRestaurante(String cascadaYSabor, String joshPrieto, String s, String s1, int restaurante1, String bandejaPaisa, String s2, int ampliandoresta1, int ampliandoresta2, float v) {
     }
 
-    public MoldeRestaurante(String nombreRestaurante, String nombrecontacto, String telefono, String precio, String comentario, Integer fotoAdicional, Integer fotoAdicional2, float valoracion) {
+    public MoldeRestaurante(String nombreRestaurante, String nombrecontacto, String telefono, String precio, Integer foto, String comentario, Integer fotoAdicional, Integer fotoAdicional2, float valoracion) {
         this.nombreRestaurante = nombreRestaurante;
         this.nombrecontacto = nombrecontacto;
         this.telefono = telefono;
         this.precio = precio;
+        this.foto = foto;
         this.comentario = comentario;
         this.fotoAdicional = fotoAdicional;
         this.fotoAdicional2 = fotoAdicional2;
@@ -59,6 +62,14 @@ public class MoldeRestaurante implements Serializable {
         this.precio = precio;
     }
 
+    public Integer getFoto() {
+        return foto;
+    }
+
+    public void setFoto(Integer foto) {
+        this.foto = foto;
+    }
+
     public String getComentario() {
         return comentario;
     }
@@ -89,9 +100,5 @@ public class MoldeRestaurante implements Serializable {
 
     public void setValoracion(float valoracion) {
         this.valoracion = valoracion;
-    }
-
-    public int getFoto() {
-        return 0;
     }
 }

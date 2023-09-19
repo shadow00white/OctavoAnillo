@@ -6,4 +6,147 @@
     android:layout_height="match_parent"
     tools:context=".AmpliandoSitioTurismo">
 
+    <ImageView
+        android:id="@+id/FotoAmpliandoTurismo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/sitioturistico1"
+        android:scaleType="fitXY"
+        app:layout_constraintVertical_bias="0"
+        />
+    <TextView
+        android:id="@+id/NombreAmpliandoTurismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Garrocha"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoTurismo"
+        app:layout_constraintVertical_bias="0.05" />
+    <TextView
+        android:id="@+id/PrecioAmpliandoTurismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 70.000 CO"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toEndOf="@id/NombreAmpliandoTurismo"
+        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoTurismo"
+        app:layout_constraintVertical_bias="0.05"
+
+        />
+    <TextView
+        android:id="@+id/AmpliadocelularTurismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tel: 3102325680"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NombreAmpliandoTurismo"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <TextView
+        android:id="@+id/comentarioAmpliandoTurismo"
+        android:layout_width="295dp"
+        android:layout_height="56dp"
+        android:text="Elegancia y serenidad se fusionan. Vistas asombrosas, atención impecable y escape perfecto para relajarse."
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AmpliadocelularTurismo"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/FotoAmpliandoTurismo2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ampliandositio10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comentarioAmpliandoTurismo"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <ImageView
+        android:id="@+id/FotoAmpliandoTurismo3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginHorizontal="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ampliandositio0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@id/FotoAmpliandoTurismo2"
+        app:layout_constraintTop_toBottomOf="@id/comentarioAmpliandoTurismo"
+        app:layout_constraintVertical_bias="0.1" />
+    <RatingBar
+        android:id="@+id/valoracionampliandoturismo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="4"
+        android:progressTint="@color/darkgoldenrod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoTurismo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <Button
+        android:id="@+id/botonamppliandoTurismo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/lightseagreen"
+        android:text="RESERVAR"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valoracionampliandoturismo"
+        app:layout_constraintVertical_bias="0.2" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
