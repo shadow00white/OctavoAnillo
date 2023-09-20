@@ -65,7 +65,7 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
 
         public void actualizarDatos(MoldeTurismo moldeTurismo) {
             fotoHotel.setImageResource(moldeTurismo.getFoto());
-            nombreHotel.setText(moldeTurismo.getNombreTurismo());
+            nombreHotel.setText(moldeTurismo.getNombre());
             precioHotel.setText(moldeTurismo.getPrecio());
             contactoHotel.setText(moldeTurismo.getTelefono());
 

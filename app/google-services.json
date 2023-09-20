@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "629214452599",
+    "project_id": "turistiandolmtv",
+    "storage_bucket": "turistiandolmtv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629214452599:android:e8e8a2f13d501e40a05f72",
+        "android_client_info": {
+          "package_name": "com.example.septimoanillo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyd8A3GfKUHjoY9zfdiZTOuPo405PzL-s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

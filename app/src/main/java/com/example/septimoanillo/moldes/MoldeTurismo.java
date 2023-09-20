@@ -95,4 +95,7 @@ public class MoldeTurismo implements Serializable {
     public void setValoracion(float valoracion) {
         this.valoracion = valoracion;
     }
+
+     {
+    }
 }
