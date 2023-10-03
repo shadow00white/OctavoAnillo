@@ -121,7 +121,7 @@
         app:layout_constraintVertical_bias="0.1"/>
 
     <Button
-        android:id="@+id/botonamppliandohotel"
+        android:id="@+id/botonampliandohotel"
         android:backgroundTint="@color/lightseagreen"
         android:text="RESERVAR"
         android:textSize="25dp"

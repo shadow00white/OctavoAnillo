@@ -104,17 +104,19 @@
         app:layout_constraintStart_toEndOf="@id/FotoAmpliandoTurismo2"
         app:layout_constraintTop_toBottomOf="@id/comentarioAmpliandoTurismo"
         app:layout_constraintVertical_bias="0.1" />
+
     <RatingBar
         android:id="@+id/valoracionampliandoturismo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:rating="4"
         android:progressTint="@color/darkgoldenrod"
+        android:rating="4"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/FotoAmpliandoTurismo2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.1"/>
+        app:layout_constraintVertical_bias="0.139" />
 
     <Button
         android:id="@+id/botonamppliandoTurismo"

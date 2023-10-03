@@ -12,6 +12,8 @@ public class MoldeHotel implements Serializable {
     private  Integer fotoAdicional2;
     private float valoracion;
 
+    private int button;  // preguntar que tipo de dato es el boton para agregarlo al adaptador y molde hotel
+
 
     public MoldeHotel() {// CONSTRUCTOR VACIO
     }
