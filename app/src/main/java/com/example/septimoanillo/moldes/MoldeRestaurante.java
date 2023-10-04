@@ -5,29 +5,16 @@ import java.io.Serializable;
 public class MoldeRestaurante implements Serializable {
 
     private String nombreRestaurante;
-    private String nombrecontacto;
     private String telefono;
     private String precio;
-
+    private String platoRecomendado;
     private Integer foto;
     private String comentario;
     private Integer fotoAdicional;
-    private  Integer fotoAdicional2;
+    private Integer fotoAdicional2;
     private float valoracion;
 
-    public MoldeRestaurante(String cascadaYSabor, String joshPrieto, String s, String s1, int restaurante1, String bandejaPaisa, String s2, int ampliandoresta1, int ampliandoresta2, float v) {
-    }
-
-    public MoldeRestaurante(String nombreRestaurante, String nombrecontacto, String telefono, String precio, Integer foto, String comentario, Integer fotoAdicional, Integer fotoAdicional2, float valoracion) {
-        this.nombreRestaurante = nombreRestaurante;
-        this.nombrecontacto = nombrecontacto;
-        this.telefono = telefono;
-        this.precio = precio;
-        this.foto = foto;
-        this.comentario = comentario;
-        this.fotoAdicional = fotoAdicional;
-        this.fotoAdicional2 = fotoAdicional2;
-        this.valoracion = valoracion;
+    public MoldeRestaurante() {
     }
 
     public String getNombreRestaurante() {
@@ -36,14 +23,6 @@ public class MoldeRestaurante implements Serializable {
 
     public void setNombreRestaurante(String nombreRestaurante) {
         this.nombreRestaurante = nombreRestaurante;
-    }
-
-    public String getNombrecontacto() {
-        return nombrecontacto;
-    }
-
-    public void setNombrecontacto(String nombrecontacto) {
-        this.nombrecontacto = nombrecontacto;
     }
 
     public String getTelefono() {
@@ -60,6 +39,14 @@ public class MoldeRestaurante implements Serializable {
 
     public void setPrecio(String precio) {
         this.precio = precio;
+    }
+
+    public String getPlatoRecomendado() {
+        return platoRecomendado;
+    }
+
+    public void setPlatoRecomendado(String platoRecomendado) {
+        this.platoRecomendado = platoRecomendado;
     }
 
     public Integer getFoto() {
@@ -101,4 +88,24 @@ public class MoldeRestaurante implements Serializable {
     public void setValoracion(float valoracion) {
         this.valoracion = valoracion;
     }
+
+    public MoldeRestaurante(String nombreRestaurante, String telefono, String precio, String platoRecomendado, Integer foto, String comentario, Integer fotoAdicional, Integer fotoAdicional2, float valoracion) {
+        this.nombreRestaurante = nombreRestaurante;
+        this.telefono = telefono;
+        this.precio = precio;
+        this.platoRecomendado = platoRecomendado;
+        this.foto = foto;
+        this.comentario = comentario;
+        this.fotoAdicional = fotoAdicional;
+        this.fotoAdicional2 = fotoAdicional2;
+        this.valoracion = valoracion;
+
+    }
+
+
+
 }
+
+
+
+

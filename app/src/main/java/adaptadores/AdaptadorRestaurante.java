@@ -19,11 +19,14 @@ import java.util.ArrayList;
 public class AdaptadorRestaurante  extends RecyclerView.Adapter <AdaptadorRestaurante.viewHolder> {
 
     public ArrayList<MoldeRestaurante> listaRestaurante;
-     public int edad;
 
     public AdaptadorRestaurante() {
     }
 
+    public AdaptadorRestaurante(ArrayList<MoldeRestaurante> listaRestaurante) {
+        this.listaRestaurante = listaRestaurante;
+
+    }
     @NonNull
     @Override
     public AdaptadorRestaurante.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,32 +44,31 @@ public class AdaptadorRestaurante  extends RecyclerView.Adapter <AdaptadorRestau
         return listaRestaurante.size();
     }
 
-    public AdaptadorRestaurante(ArrayList<MoldeRestaurante> listaRestaurante) {
-        this.listaRestaurante = listaRestaurante;
-
-    }
 
     public class viewHolder extends RecyclerView.ViewHolder {
-        ImageView fotoHotel;
-        TextView nombreHotel;
-        TextView precioHotel;
-        TextView contactoHotel;
+        ImageView fotoRestaurante;
+        TextView nombreRestaurante;
+        TextView platoRecomendado;
+        TextView precioRestaurante;
+        TextView contactoRestaurante;
 
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel=itemView.findViewById(R.id.restaurante1);
-            nombreHotel=itemView.findViewById(R.id.nombrerestaurante);
-            precioHotel =itemView.findViewById(R.id.precio);
-            contactoHotel =itemView.findViewById(R.id.numerotelefono);
+            fotoRestaurante=itemView.findViewById(R.id.restaurante1);
+            nombreRestaurante=itemView.findViewById(R.id.nombrerestaurante);
+            precioRestaurante  =itemView.findViewById(R.id.precio);
+            contactoRestaurante=itemView.findViewById(R.id.numerotelefono);
+            platoRecomendado=itemView.findViewById(R.id.platoRecomendado);
 
         }
 
         public void actualizarDatos(MoldeRestaurante moldeRestaurante) {
-            fotoHotel.setImageResource(moldeRestaurante.getFoto());
-            nombreHotel.setText(moldeRestaurante.getNombreRestaurante());
-            precioHotel.setText(moldeRestaurante.getPrecio());
-            contactoHotel.setText(moldeRestaurante.getTelefono());
+            fotoRestaurante.setImageResource(moldeRestaurante.getFoto());
+            nombreRestaurante.setText(moldeRestaurante.getNombreRestaurante());
+            precioRestaurante .setText(moldeRestaurante.getPrecio());
+            contactoRestaurante.setText(moldeRestaurante.getTelefono());
+            platoRecomendado.setText(moldeRestaurante.getPlatoRecomendado());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

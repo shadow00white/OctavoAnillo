@@ -62,10 +62,6 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
         TextView nombreHotel;
         TextView precioHotel;
         TextView contactoHotel;
-        TextView comentario;
-        ImageView fotoAdicional;
-        ImageView fotoAdicional2;
-        private float valoracion;
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
@@ -74,8 +70,6 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             nombreHotel=itemView.findViewById(R.id.nombreListaHotel);
             precioHotel =itemView.findViewById(R.id.precioListaHotel);
             contactoHotel =itemView.findViewById(R.id.celularhotel);
-            comentario=itemView.findViewById(R.id.Ampliadocelularhotel);
-
         }
 
         public  void actualizarDatos(MoldeHotel moldeHotel) {
@@ -83,7 +77,6 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             nombreHotel.setText(moldeHotel.getNombre());
             precioHotel.setText(moldeHotel.getPrecio());
             contactoHotel.setText(moldeHotel.getTelefono());
-            comentario.setText(moldeHotel.getComentario());
 
            itemView.setOnClickListener(new View.OnClickListener() {
                @Override

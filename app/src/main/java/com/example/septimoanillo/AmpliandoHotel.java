@@ -22,8 +22,6 @@ public class AmpliandoHotel extends AppCompatActivity {
     ImageView FotoAmpliandoHotel2;
     ImageView FotoAmpliandoHotel3;
     RatingBar valoracionampliandohotel;
-    Button botonampliandohotel;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

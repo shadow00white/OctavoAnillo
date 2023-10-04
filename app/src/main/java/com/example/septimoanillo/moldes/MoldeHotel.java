@@ -10,7 +10,7 @@ public class MoldeHotel implements Serializable {
     private String comentario;
     private Integer fotoAdicional;
     private  Integer fotoAdicional2;
-    private float valoracion;
+    private Float valoracion;
 
     private int button;  // preguntar que tipo de dato es el boton para agregarlo al adaptador y molde hotel
 
@@ -88,7 +88,7 @@ public class MoldeHotel implements Serializable {
         this.fotoAdicional2 = fotoAdicional2;
     }
 
-    public float getValoracion() {
+    public Float getValoracion() {
         return valoracion;
     }
 

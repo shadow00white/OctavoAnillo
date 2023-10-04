@@ -26,6 +26,10 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
     public AdaptadorTurismo() {
     }
 
+    public AdaptadorTurismo(ArrayList<MoldeTurismo> listaSitiosTuristicos) {
+        this.listaTurismo = listaSitiosTuristicos;
+    }
+
     @NonNull
     @Override
     public AdaptadorTurismo.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -43,31 +47,30 @@ public class AdaptadorTurismo  extends RecyclerView.Adapter <AdaptadorTurismo.vi
         return listaTurismo.size();
     }
 
-    public AdaptadorTurismo(ArrayList<MoldeTurismo> listaSitiosTuristicos) {
-        this.listaTurismo = listaSitiosTuristicos;
-    }
-
     public class viewHolder extends RecyclerView.ViewHolder {
-        ImageView fotoHotel;
-        TextView nombreHotel;
-        TextView precioHotel;
-        TextView contactoHotel;
+        ImageView fotoTurismo;
+        TextView nombreTurismo;
+        TextView precioTurismo;
+        TextView contactoGuia;
+        TextView contactoTurismo;
 
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-            fotoHotel=itemView.findViewById(R.id.turismo1);
-            nombreHotel=itemView.findViewById(R.id.nombreturismo);
-            precioHotel =itemView.findViewById(R.id.precioturismo);
-            contactoHotel =itemView.findViewById(R.id.contactoturismo);
+            fotoTurismo=itemView.findViewById(R.id.turismo1);
+            nombreTurismo=itemView.findViewById(R.id.nombreturismo);
+            precioTurismo =itemView.findViewById(R.id.precioturismo);
+            contactoTurismo=itemView.findViewById(R.id.gmailTurismo);
+            contactoTurismo=itemView.findViewById(R.id.contactoturismo);
 
         }
 
         public void actualizarDatos(MoldeTurismo moldeTurismo) {
-            fotoHotel.setImageResource(moldeTurismo.getFoto());
-            nombreHotel.setText(moldeTurismo.getNombre());
-            precioHotel.setText(moldeTurismo.getPrecio());
-            contactoHotel.setText(moldeTurismo.getTelefono());
+            fotoTurismo.setImageResource(moldeTurismo.getFoto());
+            nombreTurismo.setText(moldeTurismo.getNombre());
+            precioTurismo.setText(moldeTurismo.getPrecio());
+            contactoTurismo.setText(moldeTurismo.getContactoGuia());
+            contactoTurismo.setText(moldeTurismo.getTelefono());
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

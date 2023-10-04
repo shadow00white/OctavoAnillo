@@ -19,15 +19,12 @@ public class AmpliandoRestaurante extends AppCompatActivity {
     MoldeRestaurante moldeRestaurante;
     ImageView  AmpliandoRestauranteFoto;
     TextView NombreAmpliandoRestaurante;
-
     TextView  PrecioAmpliandoRestaurante;
     TextView  AmpliandocelulaRestaurante;
     TextView  ccomentarioAmpliandoRestaurante;
     ImageView FotoAmpliandoRestautante2;
     ImageView FotoAmpliandoRestaurante3;
     RatingBar valoracionampliandoRestaurante;
-    Button botonampliandohotel;
-
 
     @SuppressLint("MissingInflatedId")
     @Override

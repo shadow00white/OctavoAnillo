@@ -4,13 +4,14 @@ import java.io.Serializable;
 
 public class MoldeTurismo implements Serializable {
     private String nombre;
+    private String contactoGuia;
     private String telefono;
     private String precio;
-    private  Integer foto;
+    private Integer foto;
     private String comentario;
     private Integer fotoAdicional;
-    private  Integer fotoAdicional2;
-    private float valoracion;
+    private Integer fotoAdicional2;
+    private Float valoracion;
 
     //se crearon atributos de un molde:  lo cual representa cada uno de los elementos graficos que quiero controlar , estos varian dependiendo del molde elementos variables
     //molde logico: define atributos   que son cada uno de los elementos graficos que varian.
@@ -18,11 +19,9 @@ public class MoldeTurismo implements Serializable {
     //atributo : variable de java que representa los elementos graficos variables de un molde
     // private modificador de acceso, proteger la integridad de los datos
 
-    public MoldeTurismo(String garrocha, String s, String s1, String s2, int sitioturistico1, String s3, int ampliandositio10, int ampliandositio0, float v) {
-    }
-
-    public MoldeTurismo(String nombre, String telefono, String precio, Integer foto, String comentario, Integer fotoAdicional, Integer fotoAdicional2, float valoracion) {
+    public MoldeTurismo(String nombre, String contactoGuia, String telefono, String precio, Integer foto, String comentario, Integer fotoAdicional, Integer fotoAdicional2, Float valoracion) {
         this.nombre = nombre;
+        this.contactoGuia = contactoGuia;
         this.telefono = telefono;
         this.precio = precio;
         this.foto = foto;
@@ -32,12 +31,23 @@ public class MoldeTurismo implements Serializable {
         this.valoracion = valoracion;
     }
 
+    public MoldeTurismo() {
+    }
+
     public String getNombre() {
         return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getContactoGuia() {
+        return contactoGuia;
+    }
+
+    public void setContactoGuia(String contactoGuia) {
+        this.contactoGuia = contactoGuia;
     }
 
     public String getTelefono() {
@@ -88,14 +98,12 @@ public class MoldeTurismo implements Serializable {
         this.fotoAdicional2 = fotoAdicional2;
     }
 
-    public float getValoracion() {
+    public Float getValoracion() {
         return valoracion;
     }
 
-    public void setValoracion(float valoracion) {
+    public void setValoracion(Float valoracion) {
         this.valoracion = valoracion;
     }
 
-     {
-    }
 }
