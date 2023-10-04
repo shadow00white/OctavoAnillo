@@ -47,7 +47,7 @@ public class AmpliandoSitioTurismo extends AppCompatActivity {
         PrecioAmpliandoTurismo.setText(moldeTurismo.getPrecio());
         AmpliadocelularTurismo.setText(moldeTurismo.getTelefono());
         comentarioAmpliandoTurismo.setText(moldeTurismo.getComentario());
-        FotoAmpliandoTurismo2.setImageResource(moldeTurismo.getFotoAdicional()));
+        FotoAmpliandoTurismo2.setImageResource(moldeTurismo.getFotoAdicional());
         FotoAmpliandoTurismo3.setImageResource(moldeTurismo.getFotoAdicional2());
         valoracionampliandoturismo.setRating(moldeTurismo.getValoracion());
     }

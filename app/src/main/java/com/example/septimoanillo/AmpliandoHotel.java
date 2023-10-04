@@ -38,7 +38,6 @@ public class AmpliandoHotel extends AppCompatActivity {
         FotoAmpliandoHotel3 = findViewById(R.id.FotoAmpliandoHotel3);
         valoracionampliandohotel = findViewById(R.id.valoracionampliandohotel);
 
-        botonampliandohotel = findViewById(R.id.botonampliandohotel);//organizar y crearlo en el set
 
         moldeHotel=(MoldeHotel)getIntent().getSerializableExtra("datoshotel");
 

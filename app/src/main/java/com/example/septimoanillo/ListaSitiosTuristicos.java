@@ -1,24 +1,34 @@
 package com.example.septimoanillo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.septimoanillo.moldes.MoldeHotel;
 import com.example.septimoanillo.moldes.MoldeRestaurante;
 import com.example.septimoanillo.moldes.MoldeTurismo;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.AbstractCollection;
 import java.util.ArrayList;
 
 
+import adaptadores.AdaptadorHoteles;
 import adaptadores.AdaptadorTurismo;
 
 public class ListaSitiosTuristicos extends AppCompatActivity {
 
     ArrayList<MoldeTurismo> ListaTurismo=new ArrayList<>();
     RecyclerView recyclerView;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +41,39 @@ public class ListaSitiosTuristicos extends AppCompatActivity {
         llenarListaConDatosT();
         AdaptadorTurismo adaptadorTurismo = new AdaptadorTurismo(ListaTurismo);
         recyclerView.setAdapter(adaptadorTurismo);
+
+        db.collection("sitios")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                String nombreSitio = document.getString("nombre");
+                                String precioSitio = document.getString("precio");
+                                String DescripcionSitio=document.getString("descripcion");
+                                String TelefonoSitio=document.getString("telefono");
+
+                                Toast.makeText(ListaSitiosTuristicos.this, nombreSitio, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, precioSitio, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, DescripcionSitio, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaSitiosTuristicos.this, TelefonoSitio, Toast.LENGTH_SHORT).show();
+                                // Aquí puedes crear un objeto MoldeHotel con los datos y agregarlo a la lista
+                                // Ejemplo:
+
+                            }
+
+                            // Una vez que hayas agregado todos los hoteles a listaHoteles, configura el adaptador
+                            AdaptadorTurismo adaptadorTurismo = new AdaptadorTurismo (ListaTurismo);
+                            recyclerView.setAdapter(adaptadorTurismo);
+
+                        } else {
+                            Toast.makeText(ListaSitiosTuristicos.this, "Error al obtener datos", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+
     }
     public void    llenarListaConDatosT(){
         ListaTurismo.add( new MoldeTurismo("Garrocha","info@rioclaroreservanatural.com", "3008428286", "200.000$",R.drawable.sitioturistico1,"Un emocionante desafío de destreza y valentía que te hace sentir volar por los aires",R.drawable.ampliandositio10,R.drawable.ampliandositio0,4f));

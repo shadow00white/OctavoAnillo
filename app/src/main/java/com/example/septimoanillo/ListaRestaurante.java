@@ -1,22 +1,33 @@
 package com.example.septimoanillo;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
+import com.example.septimoanillo.moldes.MoldeHotel;
 import com.example.septimoanillo.moldes.MoldeRestaurante;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.AbstractCollection;
 import java.util.ArrayList;
 
 
+import adaptadores.AdaptadorHoteles;
 import adaptadores.AdaptadorRestaurante;
 
 public class ListaRestaurante extends AppCompatActivity {
 
     ArrayList <MoldeRestaurante>  ListaRestaurante= new ArrayList<>();
     RecyclerView recyclerView;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +39,40 @@ public class ListaRestaurante extends AppCompatActivity {
         llenarListaConDatosR();
         AdaptadorRestaurante adaptadorRestaurante=new AdaptadorRestaurante(ListaRestaurante);
         recyclerView.setAdapter(adaptadorRestaurante);
+
+        db.collection("restaurantes")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            AbstractCollection<MoldeRestaurante> listaRestaurante;
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                String nombreRestaurante = document.getString("nombre");
+                                String precioRestaurante = document.getString("precio");
+                                String DescripcionRestaurante=document.getString("descripcion");
+                                String TelefonoRestaurante=document.getString("telefono");
+
+                                Toast.makeText(ListaRestaurante.this, nombreRestaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurante.this, precioRestaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurante.this, DescripcionRestaurante, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaRestaurante.this, TelefonoRestaurante, Toast.LENGTH_SHORT).show();
+                                // Aquí puedes crear un objeto MoldeHotel con los datos y agregarlo a la lista
+                                // Ejemplo:
+
+                            }
+
+                            // Una vez que hayas agregado todos los hoteles a listaHoteles, configura el adaptador
+                            AdaptadorRestaurante adaptadorRestaurante = new AdaptadorRestaurante(ListaRestaurante);
+                            recyclerView.setAdapter(adaptadorRestaurante);
+
+                        } else {
+                            Toast.makeText(ListaRestaurante.this, "Error al obtener datos", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+
 
     }
     public void llenarListaConDatosR (){
